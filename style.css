@@ -1,18 +1,32 @@
+*{margin: 0; padding: 20px;}
+
 body{
     background-color: white;
 }
-.head{
-    background-color:burlywood;
-    width: 100%;
-    height: 100px;
-    top: 0;
-    left: 0%;
-    position: absolute;
+.body{
+    background-color: black;
+    display: flex;
+    border-radius: 25px;
+    height: 800px;
 
 }
-.head h1{
-    color: white;
-    text-align: center;
+.leftside{
+    border-radius: 15px 0px 0px 15px;
+    background-color: white;
+    flex: 1;
 
 
+}
+.chat{
+
+    background-color: antiquewhite;
+    flex: 20;
+    
+}
+.chatlog{
+    flex: 30;
+    background-color: aqua;
+    border-radius: 0px 15px 15px 0px;
+
+    
 }
