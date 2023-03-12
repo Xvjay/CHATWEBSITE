@@ -3,28 +3,40 @@
 <head>
     <link rel="stylesheet" href="style.css">
 
-<title>Page Title</title>
+<title>DaHomies</title>
 </head>
 <body>
     <div class="body">
     <div class="leftside">personal
         <ul> 
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
           </ul>
     </div>
     <div class="chat">chats</div>
-    <div class="chatlog"> chatlog</div>
+    <div class="chatlog"> chatlog
+
+        <div class="chatbox"></div>
+        <input type="text" id="myInput" placeholder="Enter text here...">
+        <button onclick="myFunction()">Submit</button>
+
+        <script>
+            function myFunction()
+            {
+              var node = document.createElement("P");
+              var textnode = document.createTextNode(document.getElementById("myInput").value);
+              node.appendChild(textnode);
+              document.getElementsByClassName("chatbox")[0].appendChild(node);
+            }
+            </script>
+                
+
+        
+    </div>
     </div>
 
     
-    
-  
-    
-
-
-
 </body>
 </html>
