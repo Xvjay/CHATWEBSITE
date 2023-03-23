@@ -11,6 +11,7 @@
   <div class="body">
     <div class="leftside">
       <a href="npc"><img src="user.png" /></a>
+      
       <ul id="personal">
         <a href="home"><img src="home.png" /></a>
         <a href="inbox"><img src="inbox.png" /></a>
@@ -22,15 +23,10 @@
     <div class="chat">chats</div>
     <div class="chatlog">
       <script type="module">
-        // Import the functions you need from the SDKs you need
-
+// dont mess with this , this is that data base stuff but it doesnt work yet
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
         import { getDatabase, set, ref, push, child, onValue, get } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+     
         var firebaseConfig = {
           apiKey: "AIzaSyAyo_TWkLDxMzwdEMl-LBccjqrIv5KA40s",
           authDomain: "chatapp-286c7.firebaseapp.com",
@@ -48,7 +44,7 @@
         const database = getDatabase(app);
 
 
-
+// line 46 - 66 , this just pops up that promt that hasyou enter your name at the start, this works but the realtime data base doesnt work and im not sure why 
         var myName = prompt("Enter your name");
 
         function sendMessage() {
