@@ -1,49 +1,54 @@
-*{margin: 0; padding: 20px;}
+* {
+  margin: 0;
+  padding: 20px;
+}
 
-body{
-    background-color: white;
+body {
+  background-color: #282828;
 }
-.body{
-    background-color: black;
-    display: flex;
-    border-radius: 25px;
-    height: 800px;
+.body {
+  background-color: black;
+  display: flex;
+  border-radius: 25px;
+  height: 800px;
+}
 
+.chat {
+  background-color: #404040;
+  flex: 20;
 }
-.leftside{
-    border-radius: 15px 0px 0px 15px;
-    background-color: white;
-    flex: 1;
-}
-.chat{
-
-    background-color: antiquewhite;
-    flex: 20;
-    
-}
-.chatlog{
-    flex: 30;
-    background-color: aqua;
-    border-radius: 0px 15px 15px 0px;
-    overflow: scroll;
- 
+.chatlog {
+  flex: 30;
+  background-color: #282828;
+  border-radius: 0px 15px 15px 0px;
 }
 
 .chatbox {
-    height: 300px;
-    width: 300px;
-    background-color: white;
-    overflow: scroll;
-  }
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  overflow: scroll;
+  border-radius: 10px 10px 10px 10px;
+}
+.leftside {
+  background-color: #181818;
+  border-radius: 10px 0 0 10px;
+}
+.leftside a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+.leftside a:hover {
+  color: #00bef8;
+}
 
-  
-  .leftside a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    display: block;
-  }
-  .leftside a:hover {
-    color: #00bef8;
-  }
+ul {
+  padding: 0%;
+  margin: 125px 0;
+}
+.leftside img {
+  height: 20px;
+}
